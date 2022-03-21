@@ -1,0 +1,11 @@
+.tech-active {
+    background-color: white;
+    color: #0B0D17;
+    border-radius: 100%;
+    opacity: 100%;
+}
+.tech {
+    border: 1px solid #FFF;
+    border-radius: 100%;
+    margin-bottom: 32px;
+}

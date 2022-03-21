@@ -1,0 +1,14 @@
+.active-destine {
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #FFF;
+    color: #FFF;
+}
+
+.planet:hover {
+    border-bottom: 2px solid #D0D6F9;
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
