@@ -12,3 +12,19 @@
     padding-top: 15px;
     padding-bottom: 15px;
 }
+
+@media(min-width:376px) and (max-width:768px){
+    .content-title{
+        font-size: 20px;
+        margin-left: 39px;
+    }
+    .main-content{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .planet-names {
+        margin-left: 100px;
+        margin-top: 15px;
+    }
+}

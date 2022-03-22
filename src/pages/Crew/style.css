@@ -1,3 +1,17 @@
 .current-member {
     background-color: white;
 }
+
+@media(min-width:376px) and (max-width:768px){
+    .role{
+        margin: 0 141px;
+    }
+    .name{
+        margin-left: -75px;
+    }
+    .members{
+        margin-left: 155px;
+        margin-bottom: 40px;
+    }
+
+}

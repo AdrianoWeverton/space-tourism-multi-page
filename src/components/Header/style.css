@@ -14,16 +14,9 @@ header{
     color: #FFF;
 }
 
-
 svg {
     width: 52px;
     height: 52px;
-}
-@media(max-width: 768px){
-    svg{
-        width: 48px;
-        height: 48px;
-    }
 }
 .active {
     border-bottom: solid 3px white;
@@ -31,4 +24,29 @@ svg {
     padding-top: 35px;
     padding-bottom: 30px;
 }
+
+@media(min-width:376px) and (max-width:768px){
+    svg{
+        width: 48px;
+        height: 48px;
+    }
+
+    .bar{
+        display: none;
+    }
+    .nav-bar{
+        width: 453px;
+        height: 104px;
+        margin-left: 231px;
+        font-size: 14px;
+    }
+    
+    .item-id{
+        display: none;
+    }
+    .header {
+        padding: 0 0 0 39px;
+    }
+}
+
 
