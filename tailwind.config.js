@@ -24,6 +24,9 @@ module.exports = {
         Condensed : ["Barlow Condensed"],
         Bellefair: ["Bellefair"],
       },
+      screens: {
+        sm: '300px',
+      }
     },
   },
   plugins: [],

@@ -1,30 +1,268 @@
+.section-destination {
+    padding: 50px 167px 0 167px;
+}
+.page-title{
+    font-family: 'Barlow Condensed';
+    font-size: 28px;
+    letter-spacing: 4.7px;
+    text-transform: uppercase;
+    color: #FFF;
+}
+.page-title-span{
+    margin-right: 28px;
+    font-weight: 700;
+    opacity: 0.25;
+}
+.destination-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 10vw;
+}
+.destination-image{
+    width: 350px;
+    height: 350px;
+}
+.destine-list{
+    display: flex;
+    align-items: center;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2.7px;
+    color: #D0D6F9;
+}
 .active-destine {
     display: block;
     padding-top: 15px;
-    padding-bottom: 15px;
+    padding-bottom: 13px;
     border-bottom: 2px solid #FFF;
     color: #FFF;
 }
-
-.planet:hover {
+.destine{
+    margin-right: 28px;
+    cursor: pointer;
+}
+.destine:hover {
     border-bottom: 2px solid #D0D6F9;
     display: block;
     padding-top: 15px;
-    padding-bottom: 15px;
+    padding-bottom: 13px;
+}
+.destine-title{
+    font-family: 'Bellefair';
+    font-size: 100px;
+    text-transform: uppercase;
+    color: #FFF;
+}
+.destine-description{
+    font-family: 'Barlow';
+    font-size: 18px;
+    color: #D0D6F9;
+    line-height: 32px;
+}
+.divisor{
+    opacity: 0.15;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+.extra-info{
+    display: flex;
+    align-items: center;
+    font-family: 'Barlow Condensed';
+    font-size: 14px;
+    letter-spacing: 2.4px;
+    color: #D0D6F9;
+    text-transform: uppercase;
+}
+.extra-info span{
+    font-family: 'Bellefair';
+    font-size: 25px;
+    color: #FFF;
+}
+.destine-distance{
+    display: flex;
+    flex-direction: column;
+    margin-right: 78px;
+}
+.travel-time{
+    display: flex;
+    flex-direction: column;
 }
 
-@media(min-width:376px) and (max-width:768px){
-    .content-title{
-        font-size: 20px;
-        margin-left: 39px;
+@media(min-width: 1000px) and (max-width: 1150px){
+    .section-destination{
+        padding: 50px 115px 0 115px;
     }
-    .main-content{
-        display: flex;
-        flex-direction: column;
+    .page-title{
+        font-size: 23px;
+    }
+    .destination-image{
+        width: 325px;
+        height: 325px;
+    }
+    .destine-title{
+        font-size: 90px;
+    }
+    .destine-description{
+        font-size: 17px;
+    }
+    .extra-info{
+        font-size: 13px;
+    }
+    .extra-info span{
+        font-size: 23px;
+    }
+}
+@media(min-width: 769px) and (max-width: 1000px){
+    .section-destination{
+        padding: 50px;
+    }
+    .page-title{
+        margin-bottom: 50px;
+    }
+    .destination-image{
+        margin: auto;
+    }
+    .destination-content{
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        gap: 5vw;
         text-align: center;
     }
-    .planet-names {
-        margin-left: 100px;
+    .destine-list{
+        justify-content: center;
+    }
+    .destine-description{
+        width: 90vw;
+    }
+    .extra-info{
+        justify-content: center;
+    }
+}
+@media(min-width: 510px) and (max-width: 768px){
+    .section-destination{
+        padding: 40px;
+    }
+    .page-title{
+        font-size: 20px;
+        margin-bottom: 50px;
+    }
+    .destination-content{
+        grid-template-columns: 1fr;
+        gap: 5vw;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .destination-image{
+        width: 300px;
+        height: 300px;
+        margin: auto;
+    }
+    .destine-list{
+        justify-content: center;
+    }
+    .destine-title{
+        font-size: 80px;
+    }
+    .destine-description{
+        font-size: 16px;
+        width: 90vw;
+    }
+    .extra-info{
+        justify-content: center;
+    }
+    .destine-distance{
+        margin-right: 100px;
+    }
+}
+@media(min-width: 376px) and (max-width: 510px){
+    .section-destination{
+        padding: 40px;
+    }
+    .page-title{
+        font-size: 18px;
+        margin-bottom: 50px;
+    }
+    .destination-content{
+        grid-template-columns: 1fr;
+        gap: 5vw;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .destination-image{
+        width: 250px;
+        height: 250px;
+        margin: auto;
+    }
+    .destine-list{
+        justify-content: center;
+    }
+    .destine-title{
         margin-top: 15px;
+        font-size: 65px;
+    }
+    .destine-description{
+        font-size: 16px;
+    }
+    .extra-info{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .destine-distance{
+        margin: 0;
+        margin-bottom: 20px;
+    }
+}
+@media(max-width: 375px){
+    .section-destination{
+        padding: 25px;
+    }
+    .page-title{
+        font-size: 16px;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+    .page-title-span{
+        margin-right: 14px;
+    }
+    .destination-image{
+        width: 170px;
+        height: 170px;
+        margin: auto;
+    }
+    .destination-content{
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 5vw;
+    }
+    .destine-list{
+        font-size: 14px;
+        letter-spacing: 2.4px;
+        justify-content: center;
+        text-align: center;
+    }
+    .destine-title{
+        font-size: 56px;
+        margin-top: 15px;
+    }
+    .destine-description{
+        font-size: 15px;
+        line-height: 25px;
+    }
+    .extra-info{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .destine-distance{
+        margin: 0;
+        margin-bottom: 40px;
     }
 }
