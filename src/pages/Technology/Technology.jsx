@@ -10,28 +10,28 @@ export const Technology = ({currentRoute}) => {
     const {name, images, description} = technology[value];
 
     return(
-        <div className="xl:bg-technology-desktop md:bg-technology-tablet sm:bg-technology-mobile min-h-screen bg-no-repeat">
+        <div className="desktop:bg-technology-desktop md:bg-technology-tablet sm:bg-technology-mobile min-h-screen bg-no-repeat bg-cover">
             <Header currentRoute={currentRoute} />
-            <section>
-                <article className='font-Condensed text-[28px] text-white uppercase leading-8 tracking-widest ml-40 mt-7 mb-20 content-title'>
-                    <span className='opacity-25 mr-7 text-[28px]'>03</span> Space launch 101
+            <section className="tech-section">
+                <article className='page-title'>
+                    <span className='page-title-span'>03</span> Space launch 101
                 </article>
-                <article className="grid grid-cols-2 ml-40 tech-content">
-                    <div className="flex items-start main-tech-content">
-                        <div className="mr-16 tech-items">
+                <article className="tech-content">
+                    <div className="main-tech-content">
+                        <div className="technologies-list">
                             {technology.map((item, index) => (
-                                <button key={index} onClick={() => setValue(index)} className={`xl:w-20 md:w-16 xl:h-20 md:h-16 md:mr-4 text-white ${value === index ? 'tech-active':''} tech font-Bellefair xl:text-3xl md:text-2xl`}>
+                                <button key={index} onClick={() => setValue(index)} className={`${value === index ? 'tech-active':''}  technology`}>
                                     {index + 1}
                                 </button>
                             ))}
                         </div>
-                        <div className="text-[#D0D6F9] ">
-                            <span className="text-base  font-Condensed uppercase">The terminology...</span>
-                            <div className="text-white xl:text-5xl md:text-[40px] font-Bellefair uppercase mb-4 mt-2">{name}</div>
-                            <div className="xl:text-lg md:text-base xl:w-[433px] md:w-[450px] md:mb-24">{description}</div>
+                        <div className="text-content">
+                            <span className="tech-title">The terminology...</span>
+                            <div className="tech-name">{name}</div>
+                            <div className="tech-description">{description}</div>
                         </div>
                     </div>
-                    <div className='xl:ml-40 xl:mt-[-80px] md:mt-[-50px] md:ml-[-160px]'><img src={window.innerWidth > 768 ? images.portrait : images.landscape} className='xl:w-[440px] xl:h-[442px] md:w-screen md:h-[310px]' /></div>
+                        <div className='tech-image'><img src={window.innerWidth > 999 ? images.portrait : images.landscape} alt={name} className='xl:w-[440px] xl:h-[442px] md:w-screen md:h-[310px]' /></div>
                 </article>
             </section>
         </div>

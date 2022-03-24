@@ -1,17 +1,198 @@
-.current-member {
-    background-color: white;
+.section-crew{
+    padding: 50px 167px 0 167px ;    
 }
-
-@media(min-width:376px) and (max-width:768px){
+.crew-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 50px;
+}
+.role{
+    font-family: 'Bellefair';
+    font-size: 32px;
+    color: #FFF;
+    opacity: 0.5;
+    text-transform: uppercase;
+    margin-top: 25px;
+}
+.member-name{
+    font-family: 'Bellefair';
+    font-size: 45px;
+    color: #FFF;
+    text-transform: uppercase;
+}
+.member-bio{
+    font-family: 'Barlow';
+    font-size: 18px;
+    line-height: 32px;
+    color: #D0D6F9;
+    height: 128px;
+}
+.members-list{
+    display: flex;
+    margin-top: 60px;
+}
+.member{
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: #FFF;
+    opacity: 0.25;
+    cursor: pointer;
+    margin-right: 21px;
+}
+.current-member {
+    opacity: 1;
+}
+.member-photo img{
+    max-height: 420px;
+    margin-left: 12vw;
+}
+@media(min-width: 1000px) and (max-width: 1150px){
+    .member-name{
+        font-size: 38px;
+    }
+    .member-bio{
+        font-size: 16px;
+    }
+}
+@media(min-width: 769px) and (max-width: 1000px){
+    .section-crew{
+        padding: 50px 100px;
+    }
+    .crew-content{
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .member-bio{
+        padding:  0 40px;
+    }
+    .members-list{
+        justify-content: center;
+        margin-top: 40px;
+    }
+    .member-photo{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        margin-top: 80px;
+    }
+    .member-photo img{
+        margin-left: 0;
+    }
+}
+@media(min-width: 510px) and (max-width: 768px){
+    .section-crew{
+        padding: 40px;
+    }
+    .crew-content{
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
     .role{
-        margin: 0 141px;
+        font-size: 24px;
     }
-    .name{
-        margin-left: -75px;
+    .member-name{
+        font-size: 40px;
     }
-    .members{
-        margin-left: 155px;
+    .member-bio{
+        font-size: 16px;
+        line-height: 28px;
+        padding: 0 30px;
+    }
+    .members-list{
+        justify-content: center;
+        margin-top: 40px;
         margin-bottom: 40px;
     }
-
+    .member-photo{
+        display: flex;
+        justify-content: center;
+    }
+    .member-photo img{
+        max-height: 500px;
+        margin-left: 0;
+    }
+}
+@media(min-width: 376px) and (max-width: 510px){
+    .section-crew{
+        padding: 50px;
+    }
+    .crew-content{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .role{
+        font-size: 22px;
+    }
+    .member-name{
+        font-size: 35px;
+    }
+    .member-bio{
+        font-size: 16px;
+    }
+    .members-list{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: -300px;
+        left: 10px;
+    }
+    .member{
+        width: 12px;
+        height: 12px;
+    }
+    .member-photo img{
+        margin-left: 0;
+        max-height: 250px;
+        margin-bottom: 50px;
+    }
+}
+@media(min-width: 376px) and (max-width: 400px){
+    .members-list{
+        top: -360px;
+    }
+}
+@media(max-width: 375px){
+    .section-crew{
+        padding: 25px;
+    }
+    .crew-content{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .role{
+        font-size: 16px;
+    }
+    .member-name{
+        font-size: 24px;
+    }
+    .member-bio{
+        font-size: 15px;
+    }
+    .members-list{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: -290px;
+        left: 10px;
+    }
+    .member{
+        width: 10px;
+        height: 10px;
+    }
+    .member-photo img{
+        margin-left: 0;
+        max-height: 250px;
+        margin-bottom: 50px;
+    }
 }

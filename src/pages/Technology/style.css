@@ -1,26 +1,223 @@
+.tech-section{
+    padding: 50px 0 0 167px;
+}
+.tech-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10vw;
+}
+.main-tech-content{
+    margin-top: 50px;
+    display: flex;
+}
+.technologies-list{
+    margin-right: 6vw;
+}
+.technology{
+    width: 80px;
+    height: 80px;
+    font-family: 'Bellefair';
+    font-size: 32px;
+    letter-spacing: 2px;
+    border: 1px solid #FFF;
+    border-radius: 100%;
+    color: #FFF;
+    margin-bottom: 32px;
+}
 .tech-active {
     background-color: white;
     color: #0B0D17;
     border-radius: 100%;
     opacity: 100%;
 }
-.tech {
-    border: 1px solid #FFF;
-    border-radius: 100%;
-    margin-bottom: 32px;
+.tech-title{
+    font-family: 'Barlow Condensed';
+    font-size: 16px;
+    color: #D0D6F9;
+    text-transform: uppercase;
+    letter-spacing: 2.7px;
 }
-
-@media(max-width:768px){
+.tech-name{
+    font-family: 'Bellefair';
+    font-size: 56px;
+    color: #FFF;
+    text-transform: uppercase;
+    min-width: 470px;
+}
+.tech-description{
+    font-family: 'Barlow';
+    font-size: 18px;
+    line-height: 32px;
+    color: #D0D6F9;
+}
+@media(min-width: 1000px) and (max-width: 1150px){
+    .tech-content{
+        gap: 0;
+    }
+    .technologies-list{
+        margin-right: 4vw;
+    }
+    .technology{
+        width: 70px;
+        height: 70px;
+        font-size: 30px;
+    }
+    .tech-name{
+        min-width: 420px;
+        font-size: 50px;
+    }
+    .tech-description{
+        font-size: 16px;
+    }
+    .tech-image{
+        margin-left: 7vw;
+    }
+}
+@media(min-width: 769px) and (max-width: 1000px){
+    .tech-section{
+        padding: 0;
+    }
+    .page-title{
+        padding: 50px;
+    }
     .tech-content{
         display: flex;
         flex-direction: column-reverse;
-    }
-    .main-tech-content{
-        display: flex;
-        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         text-align: center;
     }
-    .tech-items{
-        margin: 40px 0 40px 115px;
+    .main-tech-content{
+        flex-direction: column;
+        padding: 0 60px 60px 60px;
+        margin-top: 0;
     }
+    .technologies-list{
+        margin-right: 0;
+    }
+    .technology{
+        margin-right: 30px;
+    }
+    .tech-image{
+        padding: 0;
+    }
+    
+}
+@media(min-width: 510px) and (max-width: 768px){
+    .tech-section{
+        padding: 0;
+    }
+    .page-title{
+        padding: 60px 35px 0 35px;
+    }
+    .tech-content{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .main-tech-content{
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .technologies-list{
+        margin: 0;
+    }
+    .technology{
+        width: 60px;
+        height: 60px;
+        margin-right: 15px;
+        font-size: 24px;
+        letter-spacing: 1.5px;
+    }
+    .tech-name{
+        min-width: 0;
+        font-size: 40px;
+    }
+    .tech-description{
+        width: 80vw;
+        font-size: 16px;
+    }
+}
+@media(min-width: 376px) and (max-width: 510px){
+    .tech-section{
+        padding: 0;
+    }
+    .page-title{
+        text-align: center;
+        padding: 50px 25px 0 25px;
+    }
+    .tech-content{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .main-tech-content{
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .technologies-list{
+        margin: 0;
+    }
+    .technology{
+        width: 50px;
+        height: 50px;
+        margin-right: 15px;
+        font-size: 20px;
+        letter-spacing: 1.5px;
+    }
+    .tech-name{
+        min-width: 0;
+        font-size: 30px;
+    }
+    .tech-description{
+        width: 80vw;
+        font-size: 15px;
+    }
+}
+@media(max-width: 375px){
+    .tech-section{
+        padding: 0;
+    }
+    .page-title{
+        text-align: center;
+        padding: 0;
+        padding-top: 30px;
+    }
+    .tech-content{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .main-tech-content{
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .technologies-list{
+        margin: 0;
+    }
+    .technology{
+        width: 40px;
+        height: 40px;
+        margin-right: 15px;
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+    .tech-title{
+        font-size: 15px;
+    }
+    .tech-name{
+        min-width: 0;
+        font-size: 24px;
+    }
+    .tech-description{
+        font-size: 15px;
+        width: 327px;
+    }
+    
 }

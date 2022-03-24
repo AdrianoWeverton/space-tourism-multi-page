@@ -18,7 +18,7 @@ export const Destination = ({currentRoute}) => {
                     <span className='page-title-span'>01</span> Pick your destination
                 </article>
                 <article className='destination-content'>
-                    <div className='destination-image'><img src={images.png} /></div>
+                    <div className='destination-image'><img src={images.png} alt={name}/></div>
                     <div className='destination-main-content'>
                         <div className='destine-list'>
                             {planets.map((item, index) => (
